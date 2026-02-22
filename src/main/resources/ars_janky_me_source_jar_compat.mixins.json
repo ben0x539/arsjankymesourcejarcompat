@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "package": "org._1d6.ars_janky_me_source_jar_compat.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": ["SourceUtilMixin"],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}

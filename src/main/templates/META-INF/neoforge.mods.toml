@@ -1,0 +1,36 @@
+modLoader="javafml"
+loaderVersion="${loader_version_range}"
+license="${mod_license}"
+
+[[mods]]
+modId="${mod_id}"
+version="${mod_version}"
+displayName="${mod_name}"
+authors="Lirnril"
+description='''
+Janky mixin to let the Ars Énergistique ME Source Jar function as a regular Source Jar for Ars Nouveau machines that deposit and withdraw source to and from nearby source jars.
+'''
+
+[[mixins]]
+config="${mod_id}.mixins.json"
+[[dependencies.${mod_id}]]
+    modId="neoforge"
+    type="required"
+    versionRange="[${neo_version},)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="minecraft"
+    type="required"
+    versionRange="${minecraft_version_range}"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="arseng"
+    type="required"
+    versionRange="[2.0.0,)"
+    ordering="NONE"
+    side="SERVER"
+
